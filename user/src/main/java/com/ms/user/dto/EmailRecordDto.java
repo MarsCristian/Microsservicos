@@ -8,7 +8,7 @@ public class EmailRecordDto {
     private String subject;
     private String text;
 
-    public UUID getUserID() {
+    public UUID getUserId() {
         return userId;
     }
 
