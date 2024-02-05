@@ -1,10 +1,11 @@
 package com.ms.user.producer;
 
-import com.ms.user.dto.EmailRecordDto;
 import com.ms.user.model.UserModel;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
+import com.ms.email.dtos.EmailRecordDto;
 
 @Component
 public class UserProducer {
