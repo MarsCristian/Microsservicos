@@ -1,11 +1,12 @@
 package com.ms.user.producer;
 
-import com.ms.user.dto.EmailRecordDto;
+import com.ms.email.dtos.EmailRecordDto;
 import com.ms.user.model.UserModel;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import com.ms.email.consumer.EmailConsumer;
 @Component
 public class UserProducer {
     final RabbitTemplate rabbitTemplate;
@@ -25,6 +26,9 @@ public class UserProducer {
         emailDto.setText(userModel.getName()+", seja bem vinde!");
 
         rabbitTemplate.convertAndSend("",routingKey,emailDto);
+
+        //Violando conectando diretamente como monolito
+        EmailConsumer.ListenEmailQueue(emailDto);
     }
 
 }
