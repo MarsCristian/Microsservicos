@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<virtualModel version="13.3.1.835">
+	<resolutions>
+		<delete includeRecursiveElementChildren="true" assignedTo="" priority="Medium" date="2024-02-06T00:30:01.582Z" description="">
+			<type class="com.hello2morrow.sonargraph.core.model.element.CoreIssueId" name="DeleteRefactoring" descriptor="705703bd2847ab1a850906a0453714e8"></type>
+			<elementPattern type="FullyQualifiedName">Workspace:Main:Class|.:com:ms:user:dto</elementPattern>
+		</delete>
+	</resolutions>
+</virtualModel>

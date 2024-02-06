@@ -24,7 +24,7 @@ public class RabbitMQConfig {
     public Jackson2JsonMessageConverter messageConverter()
     {
         ObjectMapper objectMapper = new ObjectMapper();
-        return new Jackson2JsonMessaEeConverter(objectMapper);
+        return new Jackson2JsonMessageConverter(objectMapper);
     }
 
 }
