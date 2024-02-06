@@ -4,7 +4,7 @@ import com.ms.user.model.UserModel;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
+//HERE violacao do dto
 import com.ms.email.dtos.EmailRecordDto;
 
 @Component
